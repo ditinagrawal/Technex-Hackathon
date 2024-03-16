@@ -34,7 +34,7 @@ const page = () => {
                 getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
                     setImgUrl(downloadURL);
                     axios
-                        .post("https://iitbhu-wastix-backend.vercel.app/sell", {
+                        .post("http://localhost:5000/sell", {
                             title,
                             price,
                             imageUrl: downloadURL,

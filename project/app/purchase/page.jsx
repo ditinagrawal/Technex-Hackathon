@@ -6,11 +6,9 @@ import axios from "axios";
 const page = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        axios
-            .get("https://iitbhu-wastix-backend.vercel.app/purchase")
-            .then((res) => {
-                setProducts(res.data);
-            });
+        axios.get("http://localhost:5000/purchase").then((res) => {
+            setProducts(res.data);
+        });
     }, []);
     return (
         <div className="flex items-center justify-evenly pt-12">
