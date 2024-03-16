@@ -2,14 +2,7 @@ import { Schema } from "../models/model.js";
 import { dumpsSchema } from "../models/dumpsModel.js";
 
 const get = async (req, res) => {
-    dumpsSchema
-        .find()
-        .then((data) => {
-            res.send(data);
-        })
-        .catch((err) => {
-            res.send(err.message);
-        });
+    res.send("Hello from Wastix Backend");
 };
 
 const sell = async (req, res) => {
