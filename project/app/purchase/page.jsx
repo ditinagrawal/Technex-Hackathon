@@ -16,7 +16,10 @@ const page = () => {
         <div className="flex items-center justify-evenly pt-12">
             {products.map((product) => {
                 return (
-                    <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        key={product._id}
+                        className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                    >
                         <img
                             className="p-8 rounded-t-lg"
                             src={product.imageUrl}
