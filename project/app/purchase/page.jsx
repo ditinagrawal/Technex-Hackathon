@@ -21,7 +21,7 @@ const page = () => {
                         className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
                     >
                         <img
-                            className="p-8 rounded-t-lg"
+                            className="p-8 rounded-t-lg w-[300px] h-[300px]"
                             src={product.imageUrl}
                             alt="product image"
                         />
